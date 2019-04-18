@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Наш сайт</title>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <form 
+        action="#" 
+        method="get" 
+        autocomplete="on" 
+        enctype="multipart/form-data"
+        name="some_name">
+        <fieldset>
+            <legend>Название</legend>
+            <label for="text1">поле однострокового ввода</label>
+            <input id="text1" type="text">
+            <br>
+            <br>
+            <label>поле однострокового ввода
+                    <input type="text">
+            </label>        
+        </fieldset>
+        <fieldset>
+            <legend>Ввод почты</legend>
+            <input type="email">
+        </fieldset>
+        <fieldset>
+                <legend>Пароль</legend>
+                <input 
+                type="password"
+                placeholder="введите пароль">
+            </fieldset>
+        <fieldset>
+            <legend>Сайт</legend>
+            <input 
+            type="url"
+            value="http://">
+        </fieldset>
+        <fieldset>
+            <legend>Поиск</legend>
+            <input type="search">
+        </fieldset>
+        <fieldset>
+                <legend>Поиск2</legend>
+                <input type="search" required minlength="5" maxlength="10"> 
+        </fieldset>
+        <fieldset>
+                <legend>Файлы загрузить</legend>
+                <input type="file"
+                multiple
+                accept="image/*">
+
+        </fieldset>
+        <fieldset>
+                <legend>Цифры</legend>
+                <input type="number"
+                step="2"
+                min="2"
+                max="10">
+                <input type="range"><!--ползунок можно также мин и макс настроить-->
+        </fieldset>
+        <fieldset>
+                <legend>Чекбоксы и радиокнопки</legend>
+                <label>
+                <input type="checkbox" checked>согласны с нашими условиями?
+            </label>
+                <label>
+                    <input type="radio" checked>var 1
+                    </label>
+                <label><input type="radio" checked>var 2</label>
+
+                <legend>группа чекбоксов</legend>
+                <label>
+                <input type="checkbox" name="answer[]" value="1">вы ввели свое имя?>
+            </label>
+                <label>
+                    <input type="radio" name="answer[]" value="1">фамилию?
+
+                    </label>
+                <label><input type="radio" name="answer[]" value="1">очество?</label>
+            </fieldset>
+                <fieldset>
+                        <legend>Дата и время</legend>
+                           <input type="time">
+                           <br>
+                           <input type="date">
+                           <br>
+                           <input type="datetime-local">
+                           <br>
+                           <input type="month">
+                           <br>
+                           <input type="week">
+                           <br>
+                </fieldset>
+                <fieldset>
+                    <legend>Взятие цвета</legend>
+                       <input type="color">
+                       <input type="hidden">
+                </fieldset>
+           <fieldset>
+                <legend>Кнопки</legend>
+                   <input type="submit" value="Отправить">
+                   <input type="reset" value="Сброс">
+                   <input type="button" value="Кликни меня">
+                   <input type="image" src="asd.jpg" alt="no image">
+       </fieldset>   
+        
+        </form>
+    </body>
+      
+    
+
+</html>
